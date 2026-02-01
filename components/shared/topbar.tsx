@@ -51,7 +51,7 @@ export default function Topbar() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onHoverStart={() => console.log("hover started!")}
-            className="pl-4 pt-2 hover:text-[#f2e5cb] text-2xl font-extrabold text-[#f4f2ed]"
+            className="pl-4 pt-3 md:pt-2 hover:text-[#f2e5cb] text-2xl font-extrabold text-[#f4f2ed]"
           >
             TD Solar & Electric
           </motion.h3>
