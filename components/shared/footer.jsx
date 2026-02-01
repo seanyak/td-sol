@@ -26,16 +26,19 @@ export default function Footer() {
         <h1 className="text-4xl sm:text-5xl text-[#f4f2ed] tracking-tight text-left md:text-left">
           TD Solar & Electric
         </h1>
-        <h6 className="text-[#f4f2ed] text-left pl-3">                
+        <h6 className="text-[#f4f2ed] text-left md:pl-3">                
           <Link href="tel:9495565181" className="hover:text-[#cde2f0]">Phone: (949) 556-5181</Link>
         </h6>
-        <h6 className="text-[#f4f2ed] text-left pl-3">                
+        <h6 className="text-[#f4f2ed] text-left md:pl-3">                
           <Link href="mailto:info@tdsolarelectric.com" className="hover:text-[#cde2f0]">Email: info@tdsolarelectric.com</Link>
         </h6>
         </div>
         <div className="flex-col md:w-32">
-        <h5 className="text-4xl sm:text-5xl text-[#f4f2ed] tracking-tight text-left md:text-left">
+        <h5 className="hidden md:flex text-4xl sm:text-5xl text-[#f4f2ed] tracking-tight text-left md:text-left">
           Complete Power Solutions for Your Home.
+        </h5>
+        <h5 className="md:hidden text-4xl sm:text-5xl text-[#f4f2ed] tracking-tight text-left md:text-left">
+          Complete Power Solutions<br />for Your Home.
         </h5>
         </div>
         {/* exLinx social icons */}

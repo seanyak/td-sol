@@ -14,8 +14,8 @@ export default function Home() {
       <section className="hero">
         <Hero />
       </section>
-      <main className="relative min-h-screen max-w-screen flex-col items-center justify-between py-32 lg:px-16 px-8 sm:items-start">
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+      <main className="relative min-h-screen max-w-screen flex-col items-center justify-between py-4 pt-24 lg:px-16 px-8 sm:items-start">
+        <div className="flex flex-col items-center gap-4 text-center sm:items-start sm:text-left">
           <About />
           <Services />
           <ServiceArea />

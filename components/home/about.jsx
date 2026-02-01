@@ -67,10 +67,18 @@ export default function About() {
 
               <div className="mt-8">
                 <a
-                  href="/about-aero"
-                  className="inline-flex items-center justify-center rounded-full bg-[#cde2f0] px-5 py-3 text-black font-medium hover:brightness-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400"
+                  href="tel:9495565181"
+                  className="
+                    inline-flex items-center justify-center
+                    rounded-full
+                    bg-[#cde2f0]
+                    px-5 py-3
+                    text-black font-medium
+                    hover:bg-[#305c78] hover:text-[#cde2f0]
+                    focus:outline-none focus-visible:ring-2 focus-visible:ring-[#f2e5cb]
+                  "
                 >
-                  About Us
+                  CALL NOW
                 </a>
               </div>
             </div>

@@ -51,10 +51,10 @@ export default function Services() {
               viewport={{ once: true }}
               className="
                 flex flex-col items-center
-                bg-[#001420]
+                
                 rounded-2xl
                 shadow-md
-                p- sm:p-14 lg:p-20
+                p- sm:p-18 lg:p-20
                 hover:scale-105
                 transition duration-300
                 w-full max-w-sm
