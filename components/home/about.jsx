@@ -9,7 +9,7 @@ export default function About() {
   return (
     <motion.section
       id="about"
-      className="mb-20 sm:mb-28 w-full"
+      className="pt-24 w-full"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
