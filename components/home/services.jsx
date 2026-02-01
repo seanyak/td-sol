@@ -54,7 +54,7 @@ export default function Services() {
                 
                 rounded-2xl
                 shadow-md
-                p- sm:p-18 lg:p-20
+                sm:p-8 lg:p-12
                 hover:scale-105
                 transition duration-300
                 w-full max-w-sm

@@ -8,10 +8,6 @@ import { SiInstagram } from "react-icons/si";
 
 export const Linx = [
     {
-        link: "Home",
-        url: "/"
-    },
-    {
         link: "About",
         url: "#about"
     },

@@ -97,7 +97,7 @@ export default function ServiceArea() {
               <div className="relative aspect-4/3 bg-[#32373b] rounded-xl overflow-hidden shadow-lg">
                 <iframe
                   src="/maps/td-solar-service-area-map.html"
-                  title="TD Solar & Electric Service Area Map"
+                  title="TD Solar & Electric Service Area"
                   className="
                     absolute inset-0 h-full w-full border-0
                     rounded-xl
