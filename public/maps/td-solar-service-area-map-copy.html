@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_514d9eff2a8a1fbcf6834850d14c299b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+<div style="
+position: fixed; 
+bottom: 20px; left: 20px; width: 260px; z-index: 9999;
+background: white; padding: 12px 12px; border: 1px solid #ddd; border-radius: 10px;
+font-family: Arial, sans-serif; font-size: 13px; box-shadow: 0 2px 10px rgba(0,0,0,0.12);">
+<b>TD Solar &amp; Electric</b><br/>
+<span style="display:inline-block;width:10px;height:10px;background:#2ca02c;margin-right:6px;border-radius:2px;"></span>Base: Nuevo, CA<br/>
+<span style="display:inline-block;width:10px;height:10px;background:#1f77b4;margin-right:6px;border-radius:2px;"></span>Approx. service radius<br/>
+<span style="display:inline-block;width:10px;height:10px;background:#ff7f0e;margin-right:6px;border-radius:2px;"></span>Service area envelope<br/>
+<div style="margin-top:6px;color:#555;">Includes surrounding Inland Empire communities.</div>
+</div>
+    
+            <div class="folium-map" id="map_514d9eff2a8a1fbcf6834850d14c299b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_514d9eff2a8a1fbcf6834850d14c299b = L.map(
+                "map_514d9eff2a8a1fbcf6834850d14c299b",
+                {
+                    center: [33.8014, -117.1459],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_514d9eff2a8a1fbcf6834850d14c299b);
+
+            
+
+        
+    
+            var tile_layer_d09a773866dff85942e3c83c40124a36 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_514d9eff2a8a1fbcf6834850d14c299b);
+        
+    
+            var marker_cluster_5623f591ef2891dcc8af361a2a72c0f2 = L.markerClusterGroup(
+                {}
+            );
+            map_514d9eff2a8a1fbcf6834850d14c299b.addLayer(marker_cluster_5623f591ef2891dcc8af361a2a72c0f2);
+        
+    
+            var marker_175bdf8992e11dd03f8e4c3cad98ccc2 = L.marker(
+                [33.8014, -117.1459],
+                {}
+            ).addTo(marker_cluster_5623f591ef2891dcc8af361a2a72c0f2);
+        
+    
+            var icon_c60d59d3cf27f2cb54e56fc9cf7bedcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_175bdf8992e11dd03f8e4c3cad98ccc2.setIcon(icon_c60d59d3cf27f2cb54e56fc9cf7bedcc);
+        
+    
+        var popup_d203deab5fe0ab6b7a96a9ed39d4961c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3f6b169cec1576960ef15d7f1630fc4 = $(`<div id="html_f3f6b169cec1576960ef15d7f1630fc4" style="width: 100.0%; height: 100.0%;"><b>Nuevo, CA</b><br/>Base location</div>`)[0];
+            popup_d203deab5fe0ab6b7a96a9ed39d4961c.setContent(html_f3f6b169cec1576960ef15d7f1630fc4);
+        
+
+        marker_175bdf8992e11dd03f8e4c3cad98ccc2.bindPopup(popup_d203deab5fe0ab6b7a96a9ed39d4961c)
+        ;
+
+        
+    
+    
+            marker_175bdf8992e11dd03f8e4c3cad98ccc2.bindTooltip(
+                `<div>
+                     Nuevo, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffe712f5a722f0bb24957e31380fb591 = L.marker(
+                [33.7825, -117.2286],
+                {}
+            ).addTo(marker_cluster_5623f591ef2891dcc8af361a2a72c0f2);
+        
+    
+            var icon_47b2537954c63992c9a79d7f78390b50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ffe712f5a722f0bb24957e31380fb591.setIcon(icon_47b2537954c63992c9a79d7f78390b50);
+        
+    
+        var popup_71bb49144cdd36da0c7139d7f367252a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ccae2dae1843959bd210c2e805be789 = $(`<div id="html_6ccae2dae1843959bd210c2e805be789" style="width: 100.0%; height: 100.0%;"><b>Perris, CA</b></div>`)[0];
+            popup_71bb49144cdd36da0c7139d7f367252a.setContent(html_6ccae2dae1843959bd210c2e805be789);
+        
+
+        marker_ffe712f5a722f0bb24957e31380fb591.bindPopup(popup_71bb49144cdd36da0c7139d7f367252a)
+        ;
+
+        
+    
+    
+            marker_ffe712f5a722f0bb24957e31380fb591.bindTooltip(
+                `<div>
+                     Perris, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a858f79dfeebcd90ab1af8203c390d47 = L.marker(
+                [33.7284, -117.1464],
+                {}
+            ).addTo(marker_cluster_5623f591ef2891dcc8af361a2a72c0f2);
+        
+    
+            var icon_fe101e5431e9e1af1d5b4b087144c4a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a858f79dfeebcd90ab1af8203c390d47.setIcon(icon_fe101e5431e9e1af1d5b4b087144c4a0);
+        
+    
+        var popup_10e60decf81051bc38d680f5d823cd7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_47675120c3e35243ce7de4883b3ef95b = $(`<div id="html_47675120c3e35243ce7de4883b3ef95b" style="width: 100.0%; height: 100.0%;"><b>Menifee, CA</b></div>`)[0];
+            popup_10e60decf81051bc38d680f5d823cd7a.setContent(html_47675120c3e35243ce7de4883b3ef95b);
+        
+
+        marker_a858f79dfeebcd90ab1af8203c390d47.bindPopup(popup_10e60decf81051bc38d680f5d823cd7a)
+        ;
+
+        
+    
+    
+            marker_a858f79dfeebcd90ab1af8203c390d47.bindTooltip(
+                `<div>
+                     Menifee, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_466f093f690bd38348f3e93478672028 = L.marker(
+                [33.9425, -117.2297],
+                {}
+            ).addTo(marker_cluster_5623f591ef2891dcc8af361a2a72c0f2);
+        
+    
+            var icon_f22355d19827265c117ea7d90a068691 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_466f093f690bd38348f3e93478672028.setIcon(icon_f22355d19827265c117ea7d90a068691);
+        
+    
+        var popup_bf0e07576972a2aa0023f026ffc18e22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db64264ed74c52808f2556db99a4d30e = $(`<div id="html_db64264ed74c52808f2556db99a4d30e" style="width: 100.0%; height: 100.0%;"><b>Moreno Valley, CA</b></div>`)[0];
+            popup_bf0e07576972a2aa0023f026ffc18e22.setContent(html_db64264ed74c52808f2556db99a4d30e);
+        
+
+        marker_466f093f690bd38348f3e93478672028.bindPopup(popup_bf0e07576972a2aa0023f026ffc18e22)
+        ;
+
+        
+    
+    
+            marker_466f093f690bd38348f3e93478672028.bindTooltip(
+                `<div>
+                     Moreno Valley, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07db6f9a7a53e5e09a33f35136d4729e = L.marker(
+                [33.707, -117.0845],
+                {}
+            ).addTo(marker_cluster_5623f591ef2891dcc8af361a2a72c0f2);
+        
+    
+            var icon_35c1ea70afc7d11744a0a0d7282e48ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_07db6f9a7a53e5e09a33f35136d4729e.setIcon(icon_35c1ea70afc7d11744a0a0d7282e48ed);
+        
+    
+        var popup_1eb4c66f766ac27ad271fd1474940294 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2dbe6b2f9b444efb9cf44a0c3b9966d2 = $(`<div id="html_2dbe6b2f9b444efb9cf44a0c3b9966d2" style="width: 100.0%; height: 100.0%;"><b>Winchester, CA</b></div>`)[0];
+            popup_1eb4c66f766ac27ad271fd1474940294.setContent(html_2dbe6b2f9b444efb9cf44a0c3b9966d2);
+        
+
+        marker_07db6f9a7a53e5e09a33f35136d4729e.bindPopup(popup_1eb4c66f766ac27ad271fd1474940294)
+        ;
+
+        
+    
+    
+            marker_07db6f9a7a53e5e09a33f35136d4729e.bindTooltip(
+                `<div>
+                     Winchester, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36cf54d2ba743ecc7605613ebf599287 = L.marker(
+                [33.7475, -116.972],
+                {}
+            ).addTo(marker_cluster_5623f591ef2891dcc8af361a2a72c0f2);
+        
+    
+            var icon_c2b334865a79821aea4ada09077fc724 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_36cf54d2ba743ecc7605613ebf599287.setIcon(icon_c2b334865a79821aea4ada09077fc724);
+        
+    
+        var popup_4d1008d9af9d5f1eb7ce67beff41051b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d07e69af387390ebbc34893fb8f898e = $(`<div id="html_9d07e69af387390ebbc34893fb8f898e" style="width: 100.0%; height: 100.0%;"><b>Hemet, CA</b></div>`)[0];
+            popup_4d1008d9af9d5f1eb7ce67beff41051b.setContent(html_9d07e69af387390ebbc34893fb8f898e);
+        
+
+        marker_36cf54d2ba743ecc7605613ebf599287.bindPopup(popup_4d1008d9af9d5f1eb7ce67beff41051b)
+        ;
+
+        
+    
+    
+            marker_36cf54d2ba743ecc7605613ebf599287.bindTooltip(
+                `<div>
+                     Hemet, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b82054e380b1b173c6e7d21b537f9f9 = L.marker(
+                [33.8386, -117.1181],
+                {}
+            ).addTo(marker_cluster_5623f591ef2891dcc8af361a2a72c0f2);
+        
+    
+            var icon_22fa26ed571a3520d776e34c77b219c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4b82054e380b1b173c6e7d21b537f9f9.setIcon(icon_22fa26ed571a3520d776e34c77b219c2);
+        
+    
+        var popup_4a6ae158fc583b2bb047d1b063a7d9d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_424400a1b94cd57230f2fd6bea5d6b38 = $(`<div id="html_424400a1b94cd57230f2fd6bea5d6b38" style="width: 100.0%; height: 100.0%;"><b>Lakeview, CA</b></div>`)[0];
+            popup_4a6ae158fc583b2bb047d1b063a7d9d6.setContent(html_424400a1b94cd57230f2fd6bea5d6b38);
+        
+
+        marker_4b82054e380b1b173c6e7d21b537f9f9.bindPopup(popup_4a6ae158fc583b2bb047d1b063a7d9d6)
+        ;
+
+        
+    
+    
+            marker_4b82054e380b1b173c6e7d21b537f9f9.bindTooltip(
+                `<div>
+                     Lakeview, CA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_91e935a7ef68b6bde5f66af2f183ccb4 = L.circle(
+                [33.8014, -117.1459],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f77b4", "fillOpacity": 0.12, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32190, "stroke": true, "weight": 2}
+            ).addTo(map_514d9eff2a8a1fbcf6834850d14c299b);
+        
+    
+        var popup_bf89609d8c7475aee0db63b1e7e63519 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c087c7656b2484836f55e7b5671ceb6 = $(`<div id="html_1c087c7656b2484836f55e7b5671ceb6" style="width: 100.0%; height: 100.0%;">Approx. service radius (visual)</div>`)[0];
+            popup_bf89609d8c7475aee0db63b1e7e63519.setContent(html_1c087c7656b2484836f55e7b5671ceb6);
+        
+
+        circle_91e935a7ef68b6bde5f66af2f183ccb4.bindPopup(popup_bf89609d8c7475aee0db63b1e7e63519)
+        ;
+
+        
+    
+    
+            var polygon_7f0fdca244f3043923909d651e5844b3 = L.polygon(
+                [[33.9425, -117.2297], [33.7825, -117.2286], [33.7284, -117.1464], [33.707, -117.0845], [33.7475, -116.972]],
+                {"bubblingMouseEvents": true, "color": "#ff7f0e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f0e", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_514d9eff2a8a1fbcf6834850d14c299b);
+        
+    
+        var popup_9497e909d27e7fb719acc0631ac460de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea6039ad8f1b37734312609b9f269f63 = $(`<div id="html_ea6039ad8f1b37734312609b9f269f63" style="width: 100.0%; height: 100.0%;">Service area envelope (based on listed cities)</div>`)[0];
+            popup_9497e909d27e7fb719acc0631ac460de.setContent(html_ea6039ad8f1b37734312609b9f269f63);
+        
+
+        polygon_7f0fdca244f3043923909d651e5844b3.bindPopup(popup_9497e909d27e7fb719acc0631ac460de)
+        ;
+
+        
+    
+    
+            var layer_control_46093f4171cdc634a2838f8c8155c68a = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_d09a773866dff85942e3c83c40124a36,
+                },
+                overlays :  {
+                    "Service Cities" : marker_cluster_5623f591ef2891dcc8af361a2a72c0f2,
+                },
+            };
+            L.control.layers(
+                layer_control_46093f4171cdc634a2838f8c8155c68a.base_layers,
+                layer_control_46093f4171cdc634a2838f8c8155c68a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_514d9eff2a8a1fbcf6834850d14c299b);
+        
+</script>
+</html>

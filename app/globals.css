@@ -1,0 +1,237 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --bg-color: #f4f2ed;
+  --text-color: #001420;
+}
+
+.dark {
+  --bg-color: #002035;
+  --text-color: #f4f2ed;
+}
+
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('/fonts/Switzer/Switzer-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('/fonts/Switzer/Switzer-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('/fonts/Switzer/Switzer-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('/fonts/Switzer/Switzer-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('/fonts/Switzer/Switzer-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Switzer';
+  src: url('/fonts/Switzer/Switzer-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Switzer', sans-serif;
+}
+
+h1 {
+  font-family: 'Switzer';
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size:2.8rem;
+  };
+};
+
+@media (max-width: 1024px) {
+  h5 {
+    font-size:1.9rem;
+  };
+  h6 {
+    font-size:.7rem;
+    font-family: 'Switzer';
+  };
+};
+
+
+h2 {
+  font-family: 'Switzer';
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Switzer';
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size:2.3rem;
+  };
+};
+
+h4 {
+  font-family: 'owners-text';
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-family: 'owners-text';
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.title {
+  font-family: 'owners-text';
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  
+  .textBase {
+    font-family: 'owners-text';
+    font-size: .7rem;
+  };
+};
+
+h6 {
+  font-family: 'Switzer';
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.boldAF {
+  font-weight: 800;
+}
+
+.textBase {
+  font-family: 'owners-text';
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.snippet {
+  font-family: 'owners-text';
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.heavy {
+  font-weight: 900;
+}
+
+.heading {
+  font-size:3.4rem;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size:1.8rem;
+    font-weight: 800;
+  };
+}
+
+.head {
+  font-size:2.9rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .head {
+    font-size:1.8rem;
+    font-weight: 500;
+  };
+}
+
+.deets {
+  font-size:2.4rem;
+  font-weight:800;
+}
+
+@media (max-width: 768px) {
+  .deets {
+    font-size:1.1rem;
+    font-weight:800;
+  };
+}
+
+.subHead {
+  font-size:1.9rem;
+  font-weight:600;
+}
+
+@media (max-width: 768px) {
+  .subHead {
+    font-size:1.1rem;
+    font-weight:600;
+  };
+}
+
+
+.townhallPromo {
+  font-family: 'owners-text';
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.townhallMoreinfo {
+  font-family: 'owners-text';
+  font-size: 1.1rem;
+  font-weight:500;
+}
+
+.notice {
+  font-family: 'owners-text';
+  font-size: .8rem;
+  font-weight: 300;
+}
+
+.rsvp {
+  font-size:5.8rem;
+}
+
+@media (max-width: 768px) {
+  .rsvp {
+    font-size:2.8rem;
+  };
+}
