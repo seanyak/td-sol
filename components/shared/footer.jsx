@@ -30,7 +30,7 @@ export default function Footer() {
           <Link href="tel:9495565181" className="hover:text-[#cde2f0]">Phone: (949) 556-5181</Link>
         </h6>
         <h6 className="text-[#f4f2ed] text-left md:pl-3">                
-          <Link href="mailto:info@tdsolarelectric.com" className="hover:text-[#cde2f0]">Email: info@tdsolarelectric.com</Link>
+          <Link href="mailto:info@tdsolarandelectric.com" className="hover:text-[#cde2f0]">Email: info@tdsolarandelectric.com</Link>
         </h6>
         </div>
         <div className="flex-col md:w-32">

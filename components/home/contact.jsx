@@ -64,10 +64,10 @@ export default function Contact() {
                 </Link>
                 <br />
                 <Link
-                  href="mailto:info@tdsolarelectric.com"
+                  href="mailto:info@tdsolarandelectric.com"
                   className="hover:text-[#cde2f0]"
                 >
-                  Email: info@tdsolarelectric.com
+                  Email: info@tdsolarandelectric.com
                 </Link>
               </p>
 
