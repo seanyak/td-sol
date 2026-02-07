@@ -68,7 +68,7 @@ export default function ServicePage({ params }: PageProps) {
           {/* Services included */}
           <div>
             <h2 className="text-2xl font-semibold mb-4">
-              What’s Included
+              What We Do:
             </h2>
             <ul className="space-y-2 list-disc list-inside text-gray-700">
               {details.services_included.map((item, index) => (
@@ -111,7 +111,7 @@ export default function ServicePage({ params }: PageProps) {
               alt={service.img_alt}
               width={160}
               height={160}
-              className="rounded-full border border-white/20"
+              className="object-cover rounded-full border-2 border-[#cde2f0] p-3 hover:bg-[#305c78]"
             />
           </div>
 

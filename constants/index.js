@@ -9,22 +9,22 @@ import { SiInstagram } from "react-icons/si";
 export const Linx = [
     {
         link: "About",
-        url: "#about"
+        url: "/#about"
     },
     {
         link: "Services",
-        url: "#services"
+        url: "/#services"
     },
     {
         link: "Contact",
-        url: "#contact"
+        url: "/#contact"
     }
 ]
 
 export const exLinx = [
     {
         name: "instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/td_solar_and_electric?igsh=NWNibDJ3d29wc2s4",
         icon: <SiInstagram />
 
     },
