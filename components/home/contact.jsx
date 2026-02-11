@@ -21,7 +21,7 @@ export default function Contact() {
           relative overflow-hidden
           mx-auto max-w-screen
           px-4 sm:px-6 lg:px-44
-          py-12 md:py-20
+          pb-4 pt-12 md:py-20
           bg-[#001420]
           lg:rounded-4xl rounded-tr-4xl rounded-bl-4xl
         "
@@ -90,13 +90,13 @@ export default function Contact() {
             </div>
 
             {/* Foreground image */}
-            <div className="relative mx-auto w-full max-w-md md:max-w-none">
-              <div className="relative aspect-4/3 bg-[#32373b] rounded-tr-[8rem] rounded-bl-[8rem]">
+            <div className="relative mx-auto w-full max-w-md md:max-w-none shadow-2xl">
+              <div className="relative aspect-4/3 bg-[#32373b] rounded-tr-[8rem] rounded-bl-[8rem] shadow-2xl">
                 <Image
                   src="/TDSolar_residential.png"
                   alt="TD Solar & Electric residential solar installation"
                   fill
-                  className="object-cover rounded-tr-[4rem] rounded-bl-[4rem]"
+                  className="object-cover rounded-tr-[4rem] rounded-bl-4xl shadow-2xl"
                   sizes="(min-width: 768px) 50vw, 100vw"
                 />
               </div>

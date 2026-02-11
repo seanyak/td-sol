@@ -35,7 +35,7 @@ export default function ServiceArea() {
           relative overflow-hidden
           mx-auto max-w-screen
           px-4 sm:px-6 lg:px-44
-          py-12 md:py-20
+          py-6 md:py-20
           bg-[#305c78]
           lg:rounded-4xl rounded-tr-4xl rounded-bl-4xl
         "

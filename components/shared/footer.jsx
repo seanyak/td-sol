@@ -32,6 +32,7 @@ export default function Footer() {
         <h6 className="text-[#f4f2ed] text-left md:pl-3">                
           <Link href="mailto:info@tdsolarandelectric.com" className="hover:text-[#cde2f0]">Email: info@tdsolarandelectric.com</Link>
         </h6>
+        <h5 className="text-[#f4f2ed] text-left md:pl-3">CSLB - 1150311</h5>
         </div>
         <div className="flex-col md:w-32">
         <h5 className="hidden md:flex text-4xl sm:text-5xl text-[#f4f2ed] tracking-tight text-left md:text-left">

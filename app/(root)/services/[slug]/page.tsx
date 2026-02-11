@@ -49,7 +49,7 @@ export default function ServicePage({ params }: PageProps) {
           {details.hero.title}
         </h1>
         <p className="mt-4 text-lg sm:text-xl text-gray-600">
-          {details.hero.subtitle}
+          <em>{details.hero.subtitle}</em>
         </p>
       </div>
 
