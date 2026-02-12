@@ -88,7 +88,7 @@ const RightNav = ({ closeNavOnLinkClick, isOpen }: RightNavProps) => {
           </motion.div>
         </li>
         <li className="w-full text-right py-3 transition-colors hover:text-[#305c78]">
-          <h5 className="text-[#f4f2ed] text-left md:pl-3">CSLB - 1150311</h5>
+          <h5 className="text-[#f4f2ed] text-right md:pl-3">CSLB - 1150311</h5>
         </li>
         <li>
           {/* exLinx social icons */}
