@@ -85,7 +85,8 @@ const RightNav = ({ closeNavOnLinkClick, isOpen }: RightNavProps) => {
             <Link href="tel:9495565181">
               <h6>CALL NOW</h6>
             </Link>
-            <h5 className="text-[#f4f2ed] text-left md:pl-3">CSLB - 1150311</h5>
+          </motion.div>
+          <h5 className="text-[#f4f2ed] text-left md:pl-3">CSLB - 1150311</h5>
             {/* exLinx social icons */}
                     <div className="flex items-center justify-center gap-6">
                       {exLinx.map((social, index) => (
@@ -101,7 +102,6 @@ const RightNav = ({ closeNavOnLinkClick, isOpen }: RightNavProps) => {
                         </Link>
                       ))}
                     </div>
-          </motion.div>
         </li>
       </ul>
     </motion.nav>
