@@ -90,9 +90,9 @@ const RightNav = ({ closeNavOnLinkClick, isOpen }: RightNavProps) => {
         <li className="w-full text-right py-3 transition-colors hover:text-[#305c78]">
           <h5 className="text-[#f4f2ed] text-right md:pl-3">CSLB - 1150311</h5>
         </li>
-        <li>
+        <li className="w-full pt-4">
           {/* exLinx social icons */}
-          <div className="flex text-right items-right justify-right gap-6">
+          <div className="flex justify-end gap-6">
             {exLinx.map((social, index) => (
               <Link
                 key={index}
