@@ -92,7 +92,7 @@ const RightNav = ({ closeNavOnLinkClick, isOpen }: RightNavProps) => {
         </li>
         <li>
           {/* exLinx social icons */}
-          <div className="flex items-right justify-right gap-6">
+          <div className="flex text-right items-right justify-right gap-6">
             {exLinx.map((social, index) => (
               <Link
                 key={index}
@@ -100,7 +100,7 @@ const RightNav = ({ closeNavOnLinkClick, isOpen }: RightNavProps) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.name}
-                className="text-[#f4f2ed]/70 hover:text-[#cde2f0] transition duration-300 text-2xl"
+                className="text-[#f4f2ed]/70 hover:text-[#cde2f0] text-right transition duration-300 text-2xl"
               >
                 {social.icon}
               </Link>
