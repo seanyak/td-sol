@@ -87,7 +87,7 @@ const RightNav = ({ closeNavOnLinkClick, isOpen }: RightNavProps) => {
             </Link>
           </motion.div>
         </li>
-        <li className="w-full text-right py-3 transition-colors hover:text-[#305c78]">
+        <li className="w-full text-right pt-4 transition-colors hover:text-[#305c78]">
           <h5 className="text-[#f4f2ed] text-right md:pl-3">CSLB - 1150311</h5>
         </li>
         <li className="w-full pt-4">
