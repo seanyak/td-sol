@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
 import { Linx } from "@/constants";
+import { exLinx } from "@/constants";
 
 interface RightNavProps {
   closeNavOnLinkClick: () => void; // Close navigation explicitly
@@ -84,6 +85,22 @@ const RightNav = ({ closeNavOnLinkClick, isOpen }: RightNavProps) => {
             <Link href="tel:9495565181">
               <h6>CALL NOW</h6>
             </Link>
+            <h5 className="text-[#f4f2ed] text-left md:pl-3">CSLB - 1150311</h5>
+            {/* exLinx social icons */}
+                    <div className="flex items-center justify-center gap-6">
+                      {exLinx.map((social, index) => (
+                        <Link
+                          key={index}
+                          href={social.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={social.name}
+                          className="text-[#f4f2ed]/70 hover:text-[#cde2f0] transition duration-300 text-2xl"
+                        >
+                          {social.icon}
+                        </Link>
+                      ))}
+                    </div>
           </motion.div>
         </li>
       </ul>
