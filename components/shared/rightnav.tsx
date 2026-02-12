@@ -86,22 +86,26 @@ const RightNav = ({ closeNavOnLinkClick, isOpen }: RightNavProps) => {
               <h6>CALL NOW</h6>
             </Link>
           </motion.div>
+        </li>
+        <li>
           <h5 className="text-[#f4f2ed] text-left md:pl-3">CSLB - 1150311</h5>
-            {/* exLinx social icons */}
-                    <div className="flex items-center justify-center gap-6">
-                      {exLinx.map((social, index) => (
-                        <Link
-                          key={index}
-                          href={social.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={social.name}
-                          className="text-[#f4f2ed]/70 hover:text-[#cde2f0] transition duration-300 text-2xl"
-                        >
-                          {social.icon}
-                        </Link>
-                      ))}
-                    </div>
+        </li>
+        <li>
+          {/* exLinx social icons */}
+          <div className="flex items-center justify-center gap-6">
+            {exLinx.map((social, index) => (
+              <Link
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.name}
+                className="text-[#f4f2ed]/70 hover:text-[#cde2f0] transition duration-300 text-2xl"
+              >
+                {social.icon}
+              </Link>
+            ))}
+          </div>
         </li>
       </ul>
     </motion.nav>
